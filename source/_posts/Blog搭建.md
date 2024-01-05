@@ -74,6 +74,5 @@ hexo new page tags
 
 ### 发布
 ```
-cloudbase hosting deploy public -e hugo-5g350k2z2130e991
+cloudbase hosting deploy public -e ENV_ID
 ```
-
