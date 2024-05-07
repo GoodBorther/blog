@@ -34,3 +34,6 @@ headimg: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/202405052
 ## 一些小总结
 - 本文是由<u>OSPF和ISIS详解</u>中的第一章总结而来，可能大多数人觉得技术和历史没什么关系，但是我持有保留意见，套用作者大大的话就是，“退一万步说，研究历史比看那些胡编乱造的小说有趣多了。”
 - 因前苏联发送了人造卫星，美国为了提升其科技水平竞争力，建立了APRA机构，后又因众多异地的计算机数据没法同步共享，在很多天才科学家的研究下，有了ARPANET这个项目，为了提升性能，在后续的不断优化下，Internet应运而生。
+
+## 附录
+![image.png](https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240506203912.png)
