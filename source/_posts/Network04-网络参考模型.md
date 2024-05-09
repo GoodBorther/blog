@@ -5,7 +5,7 @@ tags:
 - network
 - 基础知识
 categories: 数据通信
-headimg: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240507224417.png
+cover: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240507224417.png
 ---
 > 为什么要有网络参考模型的出现呢？要解释这个问题，我们还得聊聊协议这个东西
 

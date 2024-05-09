@@ -5,7 +5,7 @@ tags:
 - network
 - 基础知识
 categories: 数据通信
-headimg: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240505223901.png
+cover: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240505223901.png
 ---
 ## 背景
 - 20世纪，是计算机蓬勃发展的一个年代，而互联网在其中，负责解决不同计算机互访的问题。

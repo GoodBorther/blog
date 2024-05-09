@@ -5,7 +5,7 @@ tags:
 - network
 - 基础知识
 categories: 数据通信
-headimg: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240504213351.png
+cover: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240504213351.png
 ---
 ## 前言
 - 笔者目前的职业是一名网络工程师，同时也是一名对于写作很感兴趣的人，所以将自己这些年间的知识，总结沉淀下来，也方便更进一步的学习，如果能帮助到别人的话，那就更好了！

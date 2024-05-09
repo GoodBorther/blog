@@ -5,7 +5,7 @@ tags:
 - network
 - 基础知识
 categories: 数据通信
-headimg: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240506210759.png
+cover: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240506210759.png
 ---
 ## 前言
 - 现如今的网络设备种类多而且杂，本文仅列举笔者用到的和学习到的。

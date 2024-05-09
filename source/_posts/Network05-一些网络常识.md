@@ -5,7 +5,7 @@ tags:
 - network
 - 基础知识
 categories: 数据通信
-headimg: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240508214112.png
+cover: https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20240508214112.png
 ---
 > 这篇文章主要了解一下网络的一些名称，扫盲扫盲。。
 ## 网络划分
