@@ -34,26 +34,26 @@ menubar:
     # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
     # title: 标题
     # url: 点击跳转到哪，支持相对路径和绝对路径
-    # - id: post
-    #   theme: '#1BCDFC'
-    #   icon: solar:documents-bold-duotone
-    #   title: 博客
-    #   url: /
-    # - id: wiki
-    #   theme: '#3DC550'
-    #   icon: solar:notebook-bookmark-bold-duotone
-    #   title: 文档
-    #   url: /wiki/
-    # - id: explore
-    #   theme: '#FA6400'
-    #   icon: solar:planet-bold-duotone
-    #   title: 探索
-    #   url: /explore/
-    # - id: social
-    #   theme: '#F44336'
-    #   icon: solar:chat-square-like-bold-duotone
-    #   title: 社交
-    #   url: /friends/
+     - id: post
+       theme: '#1BCDFC'
+       icon: solar:documents-bold-duotone
+       title: 博客
+       url: /
+     - id: 专栏
+       theme: '#3DC550'
+       icon: solar:notebook-bookmark-bold-duotone
+       title: 专栏
+       url: /topic/
+     - id: explore
+       theme: '#FA6400'
+       icon: solar:planet-bold-duotone
+       title: 探索
+       url: /explore/
+     - id: social
+       theme: '#F44336'
+       icon: solar:chat-square-like-bold-duotone
+       title: 社交
+       url: /friends/
 
 
 ######## Main ########
@@ -63,7 +63,7 @@ site_tree:
   # 主页配置
   home:
     sidebar: welcome, recent, timeline
-    rightbar: tagcloud, qaq
+    rightbar: tagcloud, qaq,timeline
   # 博客列表页配置
   index_blog:
     base_dir: blog # 只影响自动生成的页面路径
