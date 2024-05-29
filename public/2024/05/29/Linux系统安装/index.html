@@ -17,26 +17,45 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   
-  <title>重开成神路-第二十六章 - Mcj's Blog</title>
+  <title>Linux系统安装 - Mcj's Blog</title>
 
   
-    <meta name="description" content="“防御性…..灵器！”盯着闫回身上的衣袍，孙护卫缓缓道。眼中亮起了别样的光泽。“没想到你小子还有这样的宝物，我改变主意了，如果你把这衣袍送与我，我便放你一马，怎么样，很划算的买卖！”孙护卫负手而立，面上又露出了笑吟吟的摸样。只是搭配上他那涂满殷红鲜血的面庞，却不显平和，只会让人觉得怪异。闫回也露出了笑容，他当然不会信其的鬼话，却还是说道：“哦？孙护卫肯放了我？那你家少爷那里怎么交代？”“无妨，只要">
+    <meta name="description" content="Linux系统安装准备环境： Vmware16 Centos7.x镜像  创建虚拟机： 创建新的虚拟机    一路下一步，点击稍后安装操作系统    选择我们要安装的操作系统    选择虚拟硬盘存放的路径    处理器数量，根据自己本机已经需要来选    内存大小，根据需要来即可    使用网络地址转换或者桥接模式都可以（选择网络地址转换的话，后续外部网络发送变化，不影响虚拟机的ip地址）：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="重开成神路-第二十六章">
-<meta property="og:url" content="https://www.mengge.site/2024/02/24/%E9%87%8D%E5%BC%80%E6%88%90%E7%A5%9E%E8%B7%AF-%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0/index.html">
+<meta property="og:title" content="Linux系统安装">
+<meta property="og:url" content="https://www.mengge.site/2024/05/29/Linux%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/index.html">
 <meta property="og:site_name" content="Mcj&#39;s Blog">
-<meta property="og:description" content="“防御性…..灵器！”盯着闫回身上的衣袍，孙护卫缓缓道。眼中亮起了别样的光泽。“没想到你小子还有这样的宝物，我改变主意了，如果你把这衣袍送与我，我便放你一马，怎么样，很划算的买卖！”孙护卫负手而立，面上又露出了笑吟吟的摸样。只是搭配上他那涂满殷红鲜血的面庞，却不显平和，只会让人觉得怪异。闫回也露出了笑容，他当然不会信其的鬼话，却还是说道：“哦？孙护卫肯放了我？那你家少爷那里怎么交代？”“无妨，只要">
+<meta property="og:description" content="Linux系统安装准备环境： Vmware16 Centos7.x镜像  创建虚拟机： 创建新的虚拟机    一路下一步，点击稍后安装操作系统    选择我们要安装的操作系统    选择虚拟硬盘存放的路径    处理器数量，根据自己本机已经需要来选    内存大小，根据需要来即可    使用网络地址转换或者桥接模式都可以（选择网络地址转换的话，后续外部网络发送变化，不影响虚拟机的ip地址）：">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-02-24T05:04:45.000Z">
-<meta property="article:modified_time" content="2024-04-22T15:24:35.802Z">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180113.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180132.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123346.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123404.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123419.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123441.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180241.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180303.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180439.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180501.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180514.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180531.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180545.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180557.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180610.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180625.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180638.png">
+<meta property="og:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180650.png">
+<meta property="article:published_time" content="2024-05-29T15:39:11.000Z">
+<meta property="article:modified_time" content="2024-05-29T15:40:22.271Z">
 <meta property="article:author" content="Mcj">
-<meta property="article:tag" content="玄幻">
-<meta property="article:tag" content="穿越">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Centos">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180113.png">
   
   
   
-  <meta name="keywords" content="玄幻,穿越">
+  <meta name="keywords" content="Linux,Centos">
 
   <!-- feed -->
   
@@ -79,19 +98,91 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%B0%8F%E8%AF%B4/">朋友的小说</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-24T05:04:45.000Z">2024-02-24</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-22T15:24:35.802Z">2024-04-22</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Devops/">Devops</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-29T15:39:11.000Z">2024-05-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-29T15:40:22.271Z">2024-05-29</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>重开成神路-第二十六章</span></h1>
+        <h1 class="text title"><span>Linux系统安装</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><p>“防御性…..灵器！”<br>盯着闫回身上的衣袍，孙护卫缓缓道。眼中亮起了别样的光泽。<br>“没想到你小子还有这样的宝物，我改变主意了，如果你把这衣袍送与我，我便放你一马，怎么样，很划算的买卖！”<br>孙护卫负手而立，面上又露出了笑吟吟的摸样。只是搭配上他那涂满殷红鲜血的面庞，却不显平和，只会让人觉得怪异。<br>闫回也露出了笑容，他当然不会信其的鬼话，却还是说道：“哦？孙护卫肯放了我？那你家少爷那里怎么交代？”<br>“无妨，只要你最近不出现在明华城，我家少爷自然不会知道你还活着，等过些日子他将你忘了，你再回来不迟。”孙护卫面上的笑容愈加浓厚。<br>闫回心中一动，果然，此事乃是李宏光吩咐的！<br>但他面上却做出一副犹豫的摸样，半晌，一咬牙道：“好，成交！希望大人能说到做到！”<br>“当然，本护卫可是说一不二！”孙护卫双眼放光，忍不住大笑出声。<br>灵器向来珍贵无比，大多数纳灵期的修士都得不到一件，想他身为大家族的护卫，竟都没有一件灵器傍身。却没想到今日能如此轻松的获得一件，而且还是珍贵的防御性灵器，这下他的实力可以更上一层楼！<br>闫回一边脱下身上的衣袍，一边向孙护卫走了过来，口中还说着：“纳灵期高手确实不凡，我使出浑身解数都奈何不得大人，只得断尾乞命了。”<br>伸手去接衣袍，孙护卫笑着开口：“其实小兄弟你的实力已经非常不错，只是炼体与纳灵的差距实在太大，我之前的话还有效，只要你选择效忠于我家少爷，立刻就能进价纳灵期，届时，我都不一定是你的对手。至于之前的小矛盾，我去向少爷求求情，也就过去了。”<br>一时间，两人之间的气氛竟显得有些和谐。<br>粗布衣袍终于落在了孙护卫手上，就在孙护卫向回收，闫回往前送之际，衣袍横在了两人之间，遮挡住了两人的视线。<br>突然，一道包裹着淡淡火焰的手掌自衣袍的缝隙中钻出，竖直的手指宛如一把尖刀，直直插向闫回胸膛！<br>但闫回却并未躲避，他眼神冷酷，不含一丝温度。因为，他的刀口也已递到了孙护卫面前！<br>看着面前的长刀，孙护卫不气反笑，手中的动作并未停下，只是脑袋向后仰去，来躲避这一道攻击。<br>亮眼的刀光闪过！<br>孙护卫的手掌已经插入了闫回的胸膛，灼热的温度使得周边的皮肤都变得焦黑起来。<br>但闫回并未痛呼出声，他抬起手，将孙护卫的手缓缓抽了出来，抬头向前方看去。<br>殷红的鲜血滴落，一道深深的伤口将孙护卫的整个咽喉都撕裂开，他瞪大了双眼，面上带着不敢置信的神色！<br>“嗬嗬….”<br>抽回的双手捂住了喉咙，他努力了半晌，终于挤出了一句含糊不清且显得嘶哑的声音。<br>“你….你下毒？”<br>声音虽然含糊，但仍能听出那声音中蕴含的巨大痛苦与无法置信！<br>原来在刚刚，他本可以躲过那一刀，但在关键时刻却感受到一股眩晕感袭来，动作慢了半拍，才落得了如此下场。<br>闫回没有反驳，只是说道：“本来那一下是要砍下你的脑袋的！”<br>孙护卫所说不错，他的那把刀被涂上了取自天青蟒的毒液，天青蟒乃是灵兽，它的毒就算是身为纳灵期的高手也不是那么好受的！<br>“哈…..哈……”<br>孙护卫踉跄退了两步，目光中带着懊悔与刻骨恨意：“我….活不成了，但你…..受我那一击，也休想活，给我陪葬…..吧！”<br>闫回没有回话，只是抬起手来，在脸上一抹，焦糊的血肉便被擦下，而在那之下，是白嫩整洁的皮肤，哪还有半分之前被火焰炙烤的样子？<br>见此，孙护卫一时怔在原地，目中的光渐渐暗淡。<br>“当真……怪物！”<br>雪白的刀光闪过，孙护卫永远闭上了眼睛。<br>站在孙护卫无头尸身边，闫回等了许久，一直不见系统的提示声，闫回才不知是遗憾还是庆幸地轻舒了口气。<br>系统并没有为他提供类似于兽类精元的东西，这不能算是一件坏事。系统的强化实在强大，若是杀人也能获得类似于强化点的东西，他无法保证今后的自己不会变成为了获取力量而滥杀无辜的杀人狂魔！<br>人终究有所为有所不为，起码的道德底线不可失！<br>一想到自己大开杀戒的场景，闫回就不由有些不寒而栗。<br>但好在现在没有了这个烦恼，他的心中一下子放松起来，也不顾地上的血污，一屁股坐在了地上。<br>直到这时，他才感受到了胸前的疼痛，刚刚孙护卫那一击撕裂了他的皮肤，深入胸膛，再深入几分就要触及心脏。<br>若是被伤到了心脏，他也不敢保证自己的自愈能力是否还能起效。<br>胸前的伤口虽然看起来严重，但自愈能力的修复下，应该要不了多久就能痊愈，只是在这段时间内，要尽量减少战斗了。<br>低头思考了一会儿，闫回站起了身，走到一旁捡起了他的衣袍。<br>这衣袍本是普通的粗布衣裳，只是因为沾染了天狐之血，而变得有些不凡起来。听刚刚孙护卫的意思，这衣袍已经成为了灵器一级的存在！<br>天狐血果然是好东西，就是不知那天狐具体是什么修为！<br>闫回心下感慨，心中对那两瓶天狐血愈加看重。<br>看着孙护卫无头的尸体，闫回突然走了过去。<br>“给我留下这么重的伤势，收你点医药费不过分吧？”<br>闫回俯下身在尸体上摸索起来。<br>但很快，他的眉头便皱了起来。<br>“这么穷？”<br>他嘀咕了一句，却是在孙护卫身上什么都没有找到。<br>心中有些不甘，他锲而不舍地又摸索了一遍，这一次，终于有了收获。<br>只见他眼前一亮，从尸体腰间的一个隐蔽处掏出来一件巴掌大小的锦囊。<br>锦囊轻飘飘的，不像是装了什么的样子。<br>打开看去，却是一片漆黑，宛如一颗吸收了四周光线的黑洞，什么都看不见。<br>心中一动，闫回伸手向锦囊内探去。<br>小小的锦囊却如一个无底洞，将他的整个手都收了进去。<br>见此，闫回大喜：“空间道具！赚了！”<br>他正愁要随身背着包袱，一点都不轻便，没想到瞌睡了就有人送来了枕头。<br>而就在这时，一丝不正常的红光自孙护卫尸体的心脏处亮起。<br>闫回一惊，并不觉得那是被他漏掉的宝物，他谨慎得后退了一步。<br>下一刻，红芒大放，化作一道虹光向远处飞去。<br>“那是…..”<br>闫回自语。<br>突然在身后的树林中，窸窣的声音响起。<br>闫回回头看去。<br>只见一头巨狼探头而出，一双嗜血的眸子正好对上闫回的目光。<br>气氛一下子沉凝下来。</p>
+  </div><article class="md-text content"><h2 id="Linux系统安装"><a href="#Linux系统安装" class="headerlink" title="Linux系统安装"></a>Linux系统安装</h2><h3 id="准备环境："><a href="#准备环境：" class="headerlink" title="准备环境："></a>准备环境：</h3><ul>
+<li>Vmware16</li>
+<li>Centos7.x镜像</li>
+</ul>
+<h3 id="创建虚拟机："><a href="#创建虚拟机：" class="headerlink" title="创建虚拟机："></a>创建虚拟机：</h3><ul>
+<li>创建新的虚拟机</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180113.png"></p>
+<ul>
+<li>一路下一步，点击稍后安装操作系统</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180132.png"></p>
+<ul>
+<li>选择我们要安装的操作系统</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123346.png"></p>
+<ul>
+<li>选择虚拟硬盘存放的路径</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123404.png"></p>
+<ul>
+<li>处理器数量，根据自己本机已经需要来选</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123419.png"></p>
+<ul>
+<li>内存大小，根据需要来即可</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20221111123441.png"></p>
+<ul>
+<li>使用网络地址转换或者桥接模式都可以（选择网络地址转换的话，后续外部网络发送变化，不影响虚拟机的ip地址）：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180241.png"></p>
+<ul>
+<li>一路下一步即可创建完成</li>
+<li>将我们的iso挂载上，之后点击开启虚拟机即可进入系统安装界面</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180303.png"></p>
+<h3 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h3><ul>
+<li>选择第一项，第二项会扫描整个光盘，时间花费较长：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180439.png"></p>
+<ul>
+<li>选择语言，点击继续即可：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180501.png"></p>
+<ul>
+<li>我们需要配置时区和安装所使用的磁盘：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180514.png"></p>
+<ul>
+<li>时区：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180531.png"></p>
+<ul>
+<li>安装磁盘选择，直接点击done即可：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180545.png"></p>
+<ul>
+<li>配置网络，按照下图操作即可：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180557.png"></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180610.png"></p>
+<ul>
+<li>点击开始安装即可</li>
+<li>我们需要设置个root密码，自己来设置即可：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180625.png"></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180638.png"></p>
+<ul>
+<li>点击done后等待片刻后，点击右下角reboot进行重启，重启之后系统正常应为如下界面：</li>
+</ul>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://tuchuang-1258743955.cos.ap-beijing.myqcloud.com/image/20220604180650.png"></p>
+<p>输入账户root，以及密码即可进入系统</p>
 
 <div class="article-footer fs14">
     <section id="license">
@@ -101,7 +192,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/05/04/Network01-%E5%85%B3%E4%BA%8E%E6%95%B0%E6%8D%AE%E7%BD%91%E7%BB%9C/">Network01-关于数据网络</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/02/23/%E9%87%8D%E5%BC%80%E6%88%90%E7%A5%9E%E8%B7%AF-%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E7%AB%A0/">重开成神路-第二十五章</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/05/28/Network13-%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/">Network13-静态路由</a></div></section></div>
 
 
 
@@ -123,7 +214,14 @@
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">$Mcj</a> 使用 <a href="$https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">$Stellar $1.28.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。<br><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">京ICP备2022004131号-1</a></p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85"><span class="toc-text">Linux系统安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-text">准备环境：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9A"><span class="toc-text">创建虚拟机：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F"><span class="toc-text">安装系统</span></a></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
